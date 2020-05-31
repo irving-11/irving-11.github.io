@@ -81,7 +81,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+repository: irving-11/irving-11.github.io
 
 # ---------------- #
 #      Comments    #
