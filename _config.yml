@@ -47,11 +47,12 @@ plainwhite:
 #header_pages:
 # - about.md
 
-#gitment
-github_username:irving-11
-comment_gitment_repo: blogtalk
-comment_gitment_clientId: 6afa26e231d65fb24b3d
-comment_gitment_clientSecret: 62ce78feab2e160348b92d5defad3f33ea955bcf
+#gitalk
+gitalk:
+    owner: irving-11
+    repo: blogtalk
+    clientID: 6afa26e231d65fb24b3d
+    clientSecret: 62ce78feab2e160348b92d5defad3f33ea955bcf
 # Build settings
 theme: plainwhite
 
