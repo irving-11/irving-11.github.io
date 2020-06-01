@@ -1,4 +1,4 @@
-title: Blog
+title: Blog of Shuo
 author: irving-11
 email: 1827108135@qq.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -47,6 +47,10 @@ plainwhite:
 #header_pages:
 # - about.md
 
+#gitment
+comment_gitment_repo: blogtalk
+comment_gitment_clientId: 6afa26e231d65fb24b3d
+comment_gitment_clientSecret: 62ce78feab2e160348b92d5defad3f33ea955bcf
 # Build settings
 theme: plainwhite
 
