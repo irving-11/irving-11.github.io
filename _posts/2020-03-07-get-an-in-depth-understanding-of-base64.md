@@ -40,11 +40,11 @@ Base64 常用于表示、传输、存储二进制数据，也可以用于将一�
 
 编码时，每 3 个字节一组，共 8bit\*3=24bit，划分成 4 组，即每 6bit 代表一个编码后的索引值，划分如下图所示：
 
-![](../assets/images/java/base64-split.png)
+![]({{site.baseurl}}/assets/images/java/base64-split.png)
 
 这样可能不太直观，举个例子就容易理解了。比如我们对 `cat` 进行编码：
 
-![](../assets/images/java/base64-example.jpeg)
+![]({{site.baseurl}}/assets/images/java/base64-example.jpeg)
 
 可以看到 `cat` 编码后变成了 `Y2F0`。
 
@@ -52,11 +52,11 @@ Base64 常用于表示、传输、存储二进制数据，也可以用于将一�
 
 如果最后剩下 1 个字节，那么将补 4 个 0 位，编码成 2 个 Base64 字符，然后补两个 `=`：
 
-![](../assets/images/java/base64-padding2.png)
+![]({{site.baseurl}}/assets/images/java/base64-padding2.png)
 
 如果最后剩下 2 个字节，那么将补 2 个 0 位，编码成 3 个 Base64 字符，然后补一个 `=`：
 
-![](../assets/images/java/base64-padding1.png)
+![]({{site.baseurl}}/assets/images/java/base64-padding1.png)
 
 ## 3. 实现一个简易的 Base64 编码器
 
@@ -141,4 +141,4 @@ public class CustomBase64Encoder {
 - <https://zh.wikipedia.org/zh-hans/Base64>
 - <https://www.liaoxuefeng.com/wiki/897692888725344/949441536192576>
 
-[1]: https://mazhuang.org/2020/03/01/base64-bug/
+[1]: https://irving-11.github.io/java/base64/2020/03/01/base64-bug.html
