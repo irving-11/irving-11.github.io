@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Jack Shuo
-  tagline: Developer. Student
+  tagline: Student. Developer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
@@ -48,6 +48,7 @@ plainwhite:
 # - about.md
 
 #gitment
+github_username:irving-11
 comment_gitment_repo: blogtalk
 comment_gitment_clientId: 6afa26e231d65fb24b3d
 comment_gitment_clientSecret: 62ce78feab2e160348b92d5defad3f33ea955bcf
