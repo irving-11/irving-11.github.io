@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 一份简明的 Base64 原理解析
-categories: Java
-description: Base64 的原理其实很简单
-keywords: Base64
+title: "一份简明的 Base64 原理解析"
+subtitle: Base64 的原理其实很简单
+date:       2020-03-07
+author:     "mz"
+header-img: "img/post-bg-js-version.jpg"
+tags:
+    - Base64
 ---
 
 书接上回，在 [记一个 Base64 有关的 Bug][1] 一文里，我们说到了 Base64 的编解码器有不同实现，交叉使用它们可能引发的问题等等。
@@ -36,15 +39,15 @@ Base64 常用于表示、传输、存储二进制数据，也可以用于将一�
 
 标准 Base64 里的 64 个可打印字符是 `A-Za-z0-9+/`，分别依次对应索引值 0-63。索引表如下：
 
-![]({{site.baseurl}}/assets/images/java/base64-index.png)
+![]({{site.baseurl}}/img/base64/base64-index.png)
 
 编码时，每 3 个字节一组，共 8bit\*3=24bit，划分成 4 组，即每 6bit 代表一个编码后的索引值，划分如下图所示：
 
-![]({{site.baseurl}}/assets/images/java/base64-split.png)
+![]({{site.baseurl}}/img/base64/base64-split.png)
 
 这样可能不太直观，举个例子就容易理解了。比如我们对 `cat` 进行编码：
 
-![]({{site.baseurl}}/assets/images/java/base64-example.jpeg)
+![]({{site.baseurl}}/img/base64/base64-example.jpeg)
 
 可以看到 `cat` 编码后变成了 `Y2F0`。
 
@@ -52,11 +55,11 @@ Base64 常用于表示、传输、存储二进制数据，也可以用于将一�
 
 如果最后剩下 1 个字节，那么将补 4 个 0 位，编码成 2 个 Base64 字符，然后补两个 `=`：
 
-![]({{site.baseurl}}/assets/images/java/base64-padding2.png)
+![]({{site.baseurl}}/img/base64/base64-padding2.png)
 
 如果最后剩下 2 个字节，那么将补 2 个 0 位，编码成 3 个 Base64 字符，然后补一个 `=`：
 
-![]({{site.baseurl}}/assets/images/java/base64-padding1.png)
+![]({{site.baseurl}}/img/base64/base64-padding1.png)
 
 ## 3. 实现一个简易的 Base64 编码器
 
