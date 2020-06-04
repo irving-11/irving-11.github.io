@@ -3,7 +3,7 @@ layout: 	post
 title:  	"C++调用.c出现underfined reference to...问题"
 subtitle: 
 date:       2020-03-23
-author:     "shuo"
+author:     "Shuo"
 header-img: "img/post-bg-js-version.jpg"
 tags:
     - C++
