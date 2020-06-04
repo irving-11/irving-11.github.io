@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "C++调用.c出现underfined reference to...问题"
+layout: 	post
+title:  	"C++调用.c出现underfined reference to...问题"
 subtitle: 
 date:       2020-03-23
 author:     "shuo"
